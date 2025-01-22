@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function</title>
+  </head>
+  <body>
+    <script>
+      var nums1 = [10, 15, 18];
+      var nums2 = [22, 25, 23];
+      var nums3 = [35, 38, 31, 30];
+
+      //   in kar khob nist in karo nakonin
+      // har function baiad 1 kar kone
+      function sumOrAverageNums(numbers, operation) {
+        var sum = 0;
+        for (var i = 0; i < numbers.length; i++) {
+          sum += numbers[i];
+        }
+        if (operation === 'sum') {
+          return sum;
+        } else {
+          return sum / numbers.length;
+        }
+      }
+
+      var result = sumOrAverageNums(nums1, 'sum');
+      var result2 = sumOrAverageNums(nums1);
+
+      console.log(result);
+      console.log(result2);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice</title>
+    <style>
+      ul {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="list"></ul>
+    <script>
+      var users = ['ali', 'milad', 'mohammad', 'abbas', 'hasan', 'abdollah'];
+
+      for (var i = 0; i < users.length; i++) {
+        document.getElementById(
+          'list'
+        ).innerHTML += `<li><span style="color:blue">${i + 1} : </span> ${
+          users[i]
+        }</li>`;
+        // console.log(users[i]);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h1 {
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="today"></h1>
+    <script>
+      var today = new Date().getDay();
+
+      if (today === 6) {
+        document.getElementById('today').innerHTML = 'امروز شنبه است';
+      } else if (today === 0) {
+        document.getElementById('today').innerHTML = 'امروز یکشنبه است';
+      } else if (today === 1) {
+        document.getElementById('today').innerHTML = 'امروز دوشنبه است';
+      } else if (today === 2) {
+        document.getElementById('today').innerHTML = 'امروز سه شنبه است';
+      } else if (today === 3) {
+        document.getElementById('today').innerHTML = 'امروز چهارشنبه است';
+      } else if (today === 4) {
+        document.getElementById('today').innerHTML = 'امروز پنج شنبه است';
+      } else if (today === 5) {
+        document.getElementById('today').innerHTML = 'امروز جمعه است';
+      }
+
+      // 6 shanbe
+      // 0 yekshanbe
+      // 1 doshanbe
+      // 2 seshanbe
+      // 3 charshanbe
+      // 4 panjshanbe
+      // 5 jome
+    </script>
+  </body>
+</html>

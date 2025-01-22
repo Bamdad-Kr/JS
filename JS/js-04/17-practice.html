@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      ul,
+      li {
+        list-style: none;
+      }
+      #users ul {
+        padding: 20px;
+      }
+      #users ul li {
+        border: 1px solid #333;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="users"></section>
+    <script>
+      var users = [
+        { name: 'ali', age: 20, city: 'gorgan' },
+        { name: 'mohammad', age: 30, city: 'tabriz' },
+        { name: 'nila', age: 12, city: 'tehran' },
+      ];
+
+      var usersHtml = document.getElementById('users');
+
+      for (var i = 0; i < users.length; i++) {
+        usersHtml.innerHTML += `<ul>
+            <li>name : ${users[i].name}</li>
+            <li>age : ${users[i].age}</li>
+            <li>city : ${users[i].city}</li>
+        </ul>`;
+      }
+    </script>
+  </body>
+</html>

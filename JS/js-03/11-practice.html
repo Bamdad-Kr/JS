@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice</title>
+  </head>
+  <body dir="rtl">
+    <h1 id="result"></h1>
+    <script>
+      var result = prompt('Enter your number');
+      var h1ELement = document.getElementById('result');
+
+      if (result >= 10) {
+        // قبول شده
+        h1ELement.innerHTML = `<span style="color:green">شما با نمره ${result} قبول شده اید</span>`;
+      } else {
+        // مردود شده
+        h1ELement.innerHTML = `<span style="color:red">شما با نمره ${result} مردود شده اید</span>`;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      ul,
+      li {
+        list-style: none;
+      }
+      ul {
+        background-color: #333;
+        margin: 30px 0;
+      }
+
+      ul > li {
+        padding: 4px;
+      }
+
+      ul > li > span {
+        display: inline-flex;
+        padding: 8px 16px;
+        background-color: dodgerblue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="lists"></section>
+    <script>
+      var teams = [
+        [
+          { name: 'ali', age: 20, city: 'tehran' },
+          { name: 'mohammad', age: 25, city: 'tehran' },
+          { name: 'akbar', age: 30, city: 'tehran' },
+        ],
+        [
+          { name: 'sohrab', age: 50, city: 'qom' },
+          { name: 'qolam', age: 42, city: 'qom' },
+          { name: 'milad', age: 40, city: 'qom' },
+        ],
+        [
+          { name: 'hoooman', age: 10, city: 'rasht' },
+          { name: 'yousef', age: 12, city: 'rasht' },
+          { name: 'abolfazl', age: 18, city: 'rasht' },
+          { name: 'maryam', age: 26, city: 'rasht' },
+        ],
+        [
+          { name: 'soqra', age: 42, city: 'semnan' },
+          { name: 'kobra', age: 56, city: 'semnan' },
+        ],
+      ];
+
+      var html = '';
+
+      for (var i = 0; i < teams.length; i++) {
+        // babbate har team ye ul baz kardim
+        html += `<ul>`;
+        // azaie har team ro dakhele ul khodesh ezafe mikonim hamaro
+        for (var j = 0; j < teams[i].length; j++) {
+          html += `<li>
+          <span>name : ${teams[i][j].name}</span>
+          <span>age : ${teams[i][j].age}</span>
+          <span>city : ${teams[i][j].city}</span>
+        </li>`;
+        }
+
+        // dar nahaiat hamaie aza ke add shodan ul ro mibandim
+        html += `</ul>`;
+      }
+
+      document.getElementById('lists').innerHTML = html;
+    </script>
+  </body>
+</html>

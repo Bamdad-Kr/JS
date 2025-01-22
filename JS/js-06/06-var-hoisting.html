@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>var hoisting</title>
+  </head>
+  <body>
+    <script>
+      //   var x;
+      //   console.log(x);
+      //   x = 10;
+      //   console.log(x);
+
+      // console.log(x);
+      // var x = 10;
+
+      // zamane ejra
+      // var x;
+      // console.log(x);
+      // x = 10;
+
+      //   var x = 10;
+      //   console.log('x avval ' + x); // 10
+
+      //   function test() {
+      //     x = 50;
+      //     console.log('dakhel ' + x); // 50
+      //   }
+
+      //   console.log('x akhar ' + x); // 10
+
+      //   test();
+
+      //   console.log(x);
+
+      //   function demo() {
+      //     x = 10;
+      //     console.log(x);
+      //   }
+
+      //   demo();
+
+      //   console.log(x);
+
+      // variable function scope hast
+
+      var x = 10;
+
+      function test() {
+        console.log(x); // undefined
+        var x = 20;
+        console.log(x); // 20
+      }
+
+      test();
+    </script>
+  </body>
+</html>

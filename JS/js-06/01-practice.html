@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tamrin</title>
+  </head>
+  <body>
+    <section id="list"></section>
+
+    <script>
+      var users = ['ali', 'mohammad', 'milad'];
+
+      function printUserNames(usersList, color = 'black', elementId) {
+        var html = ``;
+        html += `<ul style="color:${color}">`;
+        for (var i = 0; i < usersList.length; i++) {
+          html += `<li>${usersList[i]}</li>`;
+        }
+        html += `</ul>`;
+        document.getElementById(elementId).innerHTML = html;
+      }
+
+      printUserNames(users, 'red', 'list');
+
+      // function printUserNames(usersList) {
+      //   var html = ``;
+      //   html += `<ul>`;
+      //   for (var i = 0; i < usersList.length; i++) {
+      //     html += `<li>${usersList[i]}</li>`;
+      //   }
+      //   html += `</ul>`;
+      //   document.getElementById('users').innerHTML = html;
+      // }
+
+      // printUserNames(users);
+      // printUserNames(['akbar', 'qolam']);
+    </script>
+  </body>
+</html>
