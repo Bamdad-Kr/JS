@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>if and else if</title>
+  </head>
+  <body>
+    <script>
+      // karbar age nomrash 70 va 70 be bala shod ta 100 mishe score A
+
+      // karbar agen omrash 40 va 40 ta 70 be bala shod mishe score B
+
+      // karbar agen omrash 0 ta 30 shod mishe score C
+
+      // karbar age nomrash kharej az mahdodeie 0 ta 100 bood voroodi khare jaz mahdoode ast
+
+      var result = prompt('enter score') * 1;
+
+      if (result >= 70 && result <= 100) {
+        console.log(`Your score is A`);
+      } else if (result >= 40 && result < 70) {
+        console.log(`Your score is B`);
+      } else if (result >= 0 && result < 40) {
+        console.log(`Your score is C`);
+      } else {
+        console.log(`Your number is out of range`);
+      }
+    </script>
+  </body>
+</html>

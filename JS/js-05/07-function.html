@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function</title>
+  </head>
+  <body>
+    <script>
+      var nums1 = [10, 15, 18];
+      var nums2 = [22, 25, 23];
+      var nums3 = [35, 38, 31, 30];
+
+      function sumNums(numbers) {
+        var sum = 0;
+        for (var i = 0; i < numbers.length; i++) {
+          sum += numbers[i];
+        }
+        return sum;
+      }
+
+      function average(nums) {
+        var sum = 0;
+        for (var i = 0; i < nums.length; i++) {
+          sum += nums[i];
+        }
+        var avg = sum / nums.length;
+        console.log(avg);
+        return avg;
+      }
+
+      average(nums1);
+      average(nums2);
+      average(nums3);
+
+      // majmo adade yek araie ro be ma mide
+      //   function sumNums(numbers) {
+      //     var result = 0;
+      //     for (var i = 0; i < numbers.length; i++) {
+      //       result += numbers[i];
+      //     }
+      //     console.log(result);
+      //     return result;
+      //   }
+
+      //   sumNums(nums1);
+      //   sumNums(nums2);
+      //   sumNums(nums3);
+      //   sumNums([5, 6, 12, 23, 18, 1000, 12, 19, 16]);
+
+      // sum nums1
+      //   var sum1 = 0;
+      //   for (var i = 0; i < nums1.length; i++) {
+      //     sum1 += nums1[i];
+      //   }
+      //   console.log(sum1);
+
+      // sum nums2
+      //   var sum2 = 0;
+      //   for (var j = 0; j < nums2.length; j++) {
+      //     sum2 += nums2[j];
+      //   }
+      //   console.log(sum2);
+
+      // sum nums3
+      //   var sum3 = 0;
+      //   for (var x = 0; x < nums3.length; x++) {
+      //     sum3 += nums3[x];
+      //   }
+      //   console.log(sum3);
+
+      // DRY dont repeat yourself
+    </script>
+  </body>
+</html>

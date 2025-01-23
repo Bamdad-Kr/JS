@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function</title>
+  </head>
+  <body>
+    <script>
+      var nums1 = [10, 15, 18];
+      var nums2 = [22, 25, 23];
+      var nums3 = [35, 38, 31, 30];
+      //arguments
+      function sumNums(numbers) {
+        var sum = 0;
+        for (var i = 0; i < numbers.length; i++) {
+          sum += numbers[i];
+        }
+        return sum;
+      }
+      // arguments
+      function average(numbers) {
+        return sumNums(numbers) / numbers.length;
+      }
+
+      //   function average(numbers) {
+      //     var sumAll = sumNums(numbers);
+      //     var averageAll = sumAll / numbers.length;
+      //     return averageAll;
+      //   }
+
+      //   function average(nums) {
+      //     var avg = sumNums(nums) / nums.length;
+      //     return avg;
+      //   }
+      //params
+      var sumNums1 = sumNums(nums1);
+
+      //   console.log(sumNums1);
+
+      //   function average(nums) {
+      //     var avg = sumNums(nums) / nums.length;
+      //     return avg;
+      //   }
+      //   function average(nums) {
+      //     return sumNums(nums) / nums.length;
+      //   }
+    </script>
+  </body>
+</html>

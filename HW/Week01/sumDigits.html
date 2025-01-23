@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+function sumDigits(arg) {
+    let devided = arg;
+    let result = 0;
+    while (devided > 0) {
+        let mod = devided % 10;
+        devided = devided % 10 | 0;
+        result += mod;
+    }
+    return result;    
+}
+    </script>
+  </body>
+</html>

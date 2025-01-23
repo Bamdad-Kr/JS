@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h1 {
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>کاربر عزیز امروز <span id="today"></span> است</h1>
+    <script>
+      var today = new Date().getDay();
+
+      var todayElement = document.getElementById('today');
+
+      if (today === 6) {
+        todayElement.innerHTML = 'شنبه';
+      } else if (today === 0) {
+        todayElement.innerHTML = 'یکشنبه';
+      } else if (today === 1) {
+        todayElement.innerHTML = 'دوشنبه';
+      } else if (today === 2) {
+        todayElement.innerHTML = 'سه شنبه';
+      } else if (today === 3) {
+        todayElement.innerHTML = 'چهارشنبه';
+      } else if (today === 4) {
+        todayElement.innerHTML = 'پنج شنبه';
+      } else if (today === 5) {
+        todayElement.innerHTML = 'جمعه';
+      }
+    </script>
+  </body>
+</html>

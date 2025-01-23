@@ -1,0 +1,50 @@
+ my name is ali
+
+ camel case        myNameIsAli   js
+ dashed kebab case   my-name-is-ali
+ underscore or underline    my_name_is_ali   php
+ pascal case     MyNameIsAli  .net
+
+ html hyper text markup language  tag
+ css cascading style sheets  style
+ js javascript   
+ if()
+ for()
+ while()
+
+ js  pure
+ mocha   live script   javascript
+
+ microsoft jscript IE
+
+ ecma international 
+
+ Javascript  ecmascript  es5 es6 2015 es2022 es2023
+
+
+
+ 2006 jquery  write less do more
+
+ <div id="test"></div>
+
+ document.querySelector("#test").innerHTML = 'ali rajabi'
+
+ $("#test").html("ali rajabi");
+
+
+ React  
+ angular
+ vue
+
+
+
+
+ https://www.w3schools.com/js/default.asp
+ https://javascript.info/
+ https://developer.mozilla.org/en-US/docs/Web/JavaScript
+ https://www.geeksforgeeks.org/javascript/?ref=outind
+
+
+
+ https://www.ebooksworld.ir/   
+

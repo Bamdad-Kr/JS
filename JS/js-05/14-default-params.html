@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>default params</title>
+  </head>
+  <body>
+    <script>
+      // before es6 or es2015
+      //   function sum(a, b) {
+      //     if (a === undefined || a === null) {
+      //       a = 0;
+      //     }
+      //     if (b === undefined || b === null) {
+      //       b = 0;
+      //     }
+      //     console.log(a + b);
+      //   }
+      //   function sum(a, b) {
+      //     if (!a) {
+      //       a = 0;
+      //     }
+      //     if (!b) {
+      //       b = 0;
+      //     }
+      //     console.log(a + b);
+      //   }
+
+      //   after es6
+      // function sum(a = 0, b = 0) {
+      //   console.log(a + b);
+      // }
+
+      function sum(a = 0, b = 0) {
+        // result = Number(a) + Number(b);
+        // result = a * 1 + b * 1;
+        result = +a + +b;
+        return result;
+      }
+
+      sum(5);
+      sum();
+      sum(5, 3);
+      sum(undefined, 3);
+      sum('5', '12');
+
+      // function sumAll(numbers = []) {
+      //   var sum = 0;
+      //   for (var i = 0; i < numbers.length; i++) {
+      //     sum += numbers[i];
+      //   }
+      //   return sum;
+      // }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inner HTML</title>
+  </head>
+  <body>
+    <!-- <div id="table">
+      <ul>
+        <li>ali</li>
+        <li>milad</li>
+        <li>mohammad</li>
+      </ul>
+    </div> -->
+    <div id="table"></div>
+
+    <script>
+      //   document.getElementById('table').innerHTML = 'ali';
+      //   var tableElement = document.getElementById('table');
+      //   tableElement.innerHTML = 'ali';
+
+      //   "" + "";
+      //   '' + '';
+      // es2015 or es6  `` + ``
+
+      var name1 = prompt('enter username 1');
+      var name2 = prompt('enter username 2');
+      var name3 = prompt('enter username 3');
+
+      var tableElement = document.getElementById('table');
+
+      tableElement.innerHTML = `<ul><li>${name1}</li><li>${name2}</li><li>${name3}</li></ul>`;
+
+      // tableElement.innerHTML =
+      //   '<ul><li>' + name1 + '</li> <li>' +  name2 + '</li> <li>' + name3 +'</li></ul>';
+
+      //   tableElement.innerHTML =
+      //   '<ul><li>ali</li><li>milad</li><li>mohammad</li></ul>';
+
+      //   tableElement.innerHTML =
+      //     '<ul><li>ali</li><li>milad</li><li>mohammad</li></ul>';
+
+      //   tableElement.innerHTML = '<h2 style="color:red">ali chetori</h2>';
+    </script>
+  </body>
+</html>
